@@ -1,0 +1,14 @@
+
+boot-index.js
+----------------
+require-config.js
+boot-index.js
+vendor/jquery.js
+plugins/text.js
+vendor/doT.js
+plugins/tpl.js
+tpl!templates/video-modal.tpl
+vendor/bootstrap/bootstrap-modal.js
+modules/vid-modal.js
+vendor/jquery.validate.js
+mediators/index.js

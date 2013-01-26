@@ -1,0 +1,1 @@
+require.config({shim:{"bootstrap-modal":{deps:["jquery"]},"jquery-validate":{deps:["jquery"]}},paths:{text:"plugins/text",json:"plugins/json",tpl:"plugins/tpl",dot:"vendor/doT",jquery:"vendor/jquery","jquery-validate":"vendor/jquery.validate","bootstrap-modal":"vendor/bootstrap/bootstrap-modal"},map:{}});

@@ -1,0 +1,1 @@
+define(["jquery"],function(e){function t(e){window.console&&window.console.log&&console.log(e)}return{say:t}});

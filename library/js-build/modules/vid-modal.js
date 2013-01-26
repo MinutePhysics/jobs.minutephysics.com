@@ -1,0 +1,1 @@
+define(["jquery","tpl!templates/video-modal.tpl","bootstrap-modal"],function(e,t){return function(n){e(document).on("click",n,function(n){var r=e(this),i=r,s=r.data("modal");n.preventDefault(),s?s.appendTo("body").modal("show"):(s=e(t.render({title:i.find(".video-title").text(),ytid:i.data("ytid")})).modal().on("hidden",function(){e(this).detach()}),r.data("modal",s))})}});
