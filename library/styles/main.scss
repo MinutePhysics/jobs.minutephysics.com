@@ -1,0 +1,176 @@
+//
+// Main styles
+// $ cd path/to/here
+// $ compass watch
+//
+
+$linkColor: darken(#0088cc, 10);
+
+@import "_base";
+@import "_compass_twitter_bootstrap";
+
+@import "compass/typography/vertical_rhythm";
+ 
+$base-font-size: 16px;
+$base-line-height: 20px;
+$relative-font-sizing: true;
+
+@include establish-baseline;
+
+body {
+    // background: #F7ECEC;
+}
+
+h1 {
+    @include adjust-font-size-to(36px, 2);
+    margin: rhythm(1) 0;
+}
+
+h2 {
+    @include adjust-font-size-to(28px, 2);
+    margin-bottom: rhythm(1);
+}
+
+h3 {
+    @include adjust-font-size-to(24px, 2);
+    margin: rhythm(1) 0;
+}
+
+.modal {
+    width: 590px;
+}
+
+.logo {
+    width: 180px;
+    margin: 0 0 1em 6em;
+}
+
+.box {
+    background: rgb(229, 239, 253);
+    padding: 2em;
+    border-radius: 10px;
+    border: 1px solid rgb(190, 194, 199);
+    height: 220px;
+    margin-top: rhythm(2);
+    margin-bottom: rhythm(2);
+
+    &:first-child {
+        margin-right: 40px;
+    }
+}
+
+#ss-form {
+    width: 48em;
+    margin-bottom: rhythm(4);
+
+    abbr {
+        float: right;
+    }
+
+    .user-details {
+
+        width: 40em;
+
+        input {
+            width: 20em;
+        }
+
+        .ss-item {
+            margin-bottom: 0;
+        }
+
+        margin-bottom: rhythm(1);
+    }
+
+    .control-group {
+        margin: 0;
+    }
+
+    .vid-question {
+
+        label {
+            float: none;
+            width: auto;
+            text-align: left;
+            margin: rhythm(1) 0;
+        }
+
+        .vid-links {
+            @include clearfix;
+            margin: rhythm(1) 0;
+            .thumbnail {
+                float: left;
+                width: 30%;
+                margin-left: 2.6%;
+            }
+            .thumbnail:first-child {
+                margin-left: 0;
+            }
+        }
+
+        textarea {
+            width: 98%;
+        }
+    }
+
+    label.error {
+        position: absolute;
+        text-align: left;
+        padding-top: 5px;
+    }
+
+    input[type="submit"] {
+        width: auto;
+        float: right;
+    }
+}
+
+.ss-item {
+    @include clearfix();
+    margin-bottom: rhythm(1);
+
+    label {
+        width: 15em;
+        float: left;
+        text-align: right;
+        padding-right: 2em;
+    }
+
+    input,
+    textarea {
+        width: 30em;
+    }
+
+    .ss-q-help {
+        display: none;
+    }
+}
+
+
+body > footer {
+    padding: rhythm(4) 0;
+    background: rgb(229, 239, 253);
+    color: #222;
+
+    a,
+    a:hover,
+    a:focus {
+        
+    }
+
+    .span8 {
+        margin-top: rhythm(.5);
+    }
+
+    .span4 {
+        position: relative;
+        z-index: 1;
+    }
+    .sheep {
+        position: absolute;
+        left: -15em;
+        bottom: -5em;
+        z-index: -1;
+        opacity: 0.4;
+    }
+}
