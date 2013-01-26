@@ -1,6 +1,7 @@
 # Jobs Page for MinutePhysics.com
 
 Source Code by [Well Caffeinated](http://wellcaffeinated.net).
+Artwork/copy by [MinutePhysics](http://minutephysics.com).
 
 Internal use. But use what you like under the specified licenses: 
 
